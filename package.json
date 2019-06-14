@@ -1,0 +1,21 @@
+{
+  "name": "gulp-mjml",
+  "version": "3.0.0",
+  "description": "Add Gulp to your MJML workflow",
+  "main": "src/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guillaume Badi <gbadi@mailjet.com> (http://github.com/GuillaumeBadi)",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "mjml": "^4.4.0-beta.1",
+    "plugin-error": "^1.0.1",
+    "replace-ext": "^1.0.0",
+    "through2": "^3.0.1"
+  }
+}

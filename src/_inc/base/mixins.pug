@@ -1,0 +1,13 @@
+mixin styles(type, breakpoint)
+  if type === "mobile"
+    mj-style
+      | @media (max-width: #{breakpoint}) {
+      block
+      block styles-mobile
+      | }  
+  else if type === "inline"
+    mj-style(inline="inline")
+      block
+      block styles-inline
+  
+  

@@ -1,0 +1,23 @@
+append attributes
+
+append styles-inline
+  .
+    .foot {color: #aaaaaa}
+    .foot p {color: #aaaaaa; margin: auto; font-size: 13px;}
+    .foot a {color: #aaaaaa;}
+
+append styles-mobile
+
+mj-wrapper(css-class="foot")
+  mj-section(mj-class="pb-0")
+    mj-column
+      mj-social(icon-size="40px" inner-padding="0 10px")
+        mj-social-element( href="https://www.facebook.com/" src="https://s3.amazonaws.com/media.briantracy.com/assets/images/newsletter/common/icon-fb.jpg")
+        mj-social-element( href="https://twitter.com/" src="https://s3.amazonaws.com/media.briantracy.com/assets/images/newsletter/common/icon-twt.jpg")
+        mj-social-element( href="mailto:" src="https://s3.amazonaws.com/media.briantracy.com/assets/images/newsletter/common/icon-email.jpg")
+  mj-section(mj-class="pt-0")
+    mj-column
+      mj-text(mj-class="center")
+        p #{email.client} 
+          | &nbsp;|&nbsp; 
+          a(href="https://www.briantracy.com/s.aspx?c=[EMAILIDX]") Unsubscribe

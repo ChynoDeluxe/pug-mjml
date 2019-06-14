@@ -1,0 +1,62 @@
+include ../base/mixins
+-
+  email = {}
+  email.debug = false
+  email.title = ""
+  email.snippet = ""
+  email.breakpoint = "540px"
+  email.client = "Client Name"
+
+block var-overwrites
+
+mjml(owa="desktop")
+  mj-head
+    if email.title !== ""
+      mj-title= email.title
+
+    if email.snippet !== ""
+      mj-preview= email.snippet
+
+    mj-breakpoint(width=email.breakpoint)
+    mj-font(name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,600i")
+    mj-font(name="Lato" href="https://fonts.googleapis.com/css?family=Lato:600")
+
+    mj-attributes
+      include ../base/classes
+
+      block attributes
+
+    +styles('inline').
+      a {color: #3d7aec; cursor: pointer !important}
+      .highlight {color: #3d7aec;}
+
+      b {font-weight: 700;}
+      ul li:not(:last-child) { padding-bottom: 1rem; }
+
+      img {max-width: 100%;}
+
+      p {
+        font-size: inherit;
+        margin: 0 auto 10px;
+        line-height: inherit;
+      }
+      p:last-child {margin-bottom: 0px;}
+
+
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 auto;
+      }
+
+    +styles("mobile", email.breakpoint).
+      p {
+        margin-bottom: 16px !important;
+        line-height: 20px !important;
+      }
+      p:last-child {margin-bottom: 0px !important}
+      .title {font-size: 18px !important}
+
+
+  mj-body(width="620px" background-color="#f2f2f2")
+    block content

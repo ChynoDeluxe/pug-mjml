@@ -1,0 +1,186 @@
+extends ../_inc/templates/_master
+
+block attributes
+
+block var-overwrites
+  -
+    email.title = ""
+    email.snippet = ""
+
+block styles-inline
+block styles-mobile
+
+block content
+  include ../_inc/components/_logo-bar
+  -// HEADER IMAGE
+  mj-wrapper
+    mj-section(mj-class="bb-primary py-0")
+      mj-column
+        mj-image(src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+
+  -// TEXT CONTENT - AFTER HEADER
+  mj-wrapper(mj-class="pt-0")
+    mj-section(mj-class="bg-white px-sm")
+      mj-column
+        -// TEXT CONTENT - CENTER BOLD
+        mj-text(mj-class="pb-md bold center")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+        mj-text(mj-class="pb-0")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempora a laboriosam laborum eum sit rem temporibus, voluptatibus pariatur totam sunt, quisquam quae distinctio, eaque architecto repellendus optio qui laudantium!
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempora a laboriosam laborum eum sit rem temporibus, voluptatibus pariatur totam sunt, quisquam quae distinctio, eaque architecto repellendus optio qui laudantium!
+
+  -// ALTERNATE CONTENT SECTIONS
+  mj-wrapper(mj-class="pt-lg")
+    mj-section(mj-class="bg-white py-0")
+      mj-column(mj-class="pa-0")
+        mj-image(src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/square.jpg")
+      mj-column(mj-class="pa-sm")
+        mj-text
+          h3 Content Title goes here
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae rerum laudantium asperiores doloremque. Eveniet minima amet magnam libero dignissimos?
+
+  -// ALTERNATE CONTENT SECTIONS
+  mj-wrapper(mj-class="pt-lg")
+    mj-section(mj-class="bg-white py-0 rtl")
+      mj-column(mj-class="pa-0")
+        mj-image(src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/square.jpg")
+      mj-column(mj-class="pa-sm")
+        mj-text
+          h3 Content Title goes here
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae rerum laudantium asperiores doloremque. Eveniet minima amet magnam libero dignissimos?
+
+
+  -// THREE COLUMN WITHOUT BACKGROUND
+  mj-wrapper(mj-class="pa-0")
+    mj-section(mj-class="py-sm")
+      mj-column(mj-class="pa-sm")
+        mj-image(src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="bgc-white py-sm txt-sm")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="pt-0 pb-md bgc-white")
+          p
+            a(href="https://google.com") Read More &gt;
+      mj-column(mj-class="pa-sm")
+        mj-image(src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="bgc-white py-sm txt-sm")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="pt-0 pb-md bgc-white")
+          p
+            a(href="https://google.com") Read More &gt;
+      mj-column(mj-class="pa-sm")
+        mj-image(src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="bgc-white py-sm txt-sm")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="pt-0 pb-md bgc-white")
+          p
+            a(href="https://google.com") Read More &gt;
+
+  -// TWO COLUMN WITH BACKGROUND
+  mj-wrapper(mj-class="py-0")
+    mj-section(mj-class="bg-white pa-sm")
+      mj-column(mj-class="pa-sm")
+        mj-image(mj-class="px-0 pt-0" src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="py-sm px-xs txt-md")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="py-0 px-xs bgc-white")
+          p
+            a(href="https://google.com") Read More &gt;
+
+      mj-column(mj-class="pa-sm")
+        mj-image(mj-class="px-0 pt-0" src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="py-sm px-xs txt-md")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="py-0 px-xs bgc-white")
+          p
+            a(href="https://google.com") Read More &gt;
+
+  -// TEXT CONTENT
+  mj-wrapper(mj-class="pt-lg")
+    -// SECTION HEADLINE
+    mj-section(mj-class="bg-white py-0")
+      mj-column
+        mj-text(mj-class="bgc-primary txt-white bold center txt-2x pt-sm px-lg")
+          p This is the headline for the section
+
+    -// GREY BOX
+    mj-section(mj-class="bg-white")
+      mj-column(mj-class="px-lg")
+
+        mj-text(mj-class="bgc-body py-md px-lg")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempora a laboriosam laborum eum sit rem temporibus, voluptatibus pariatur totam sunt, quisquam quae distinctio, eaque architecto repellendus optio qui laudantium!
+        mj-button(mj-class="bg-primary txt-white pb-0" href="https://google.com") This is a cool button
+
+  -// TWO COLUMN WITHOUT BACKGROUND
+  mj-wrapper(mj-class="pa-0")
+    mj-section(mj-class="py-sm")
+      mj-column(mj-class="pa-sm")
+        mj-image(src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="bgc-white pt-sm pb-md txt-md")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="pb-md px-md bgc-white")
+          p
+            a(href="https://google.com") Read More &gt;
+
+      mj-column(mj-class="pa-sm")
+        mj-image(src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="bgc-white pt-sm pb-md txt-md")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="pb-md px-md bgc-white")
+          p
+            a(href="https://google.com") Read More &gt;
+
+
+  -// THREE COLUMN WITH BACKGROUND
+  mj-wrapper
+    mj-section(mj-class="bg-white pa-sm")
+      mj-column(mj-class="pa-sm")
+        mj-image(mj-class="px-0 pt-0" src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="bgc-white py-sm px-xs txt-sm")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="px-xs pb-0")
+          p
+            a(href="https://google.com") Read More &gt;
+
+      mj-column(mj-class="pa-sm")
+        mj-image(mj-class="px-0 pt-0" src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="bgc-white py-sm px-xs txt-sm")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="px-xs pb-0")
+          p
+            a(href="https://google.com") Read More &gt;
+
+      mj-column(mj-class="pa-sm")
+        mj-image(mj-class="px-0 pt-0" src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/header.jpg")
+        mj-text(mj-class="bgc-white py-sm px-xs txt-sm")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia architecto quasi?
+        mj-text(mj-class="px-xs pb-0")
+          p
+            a(href="https://google.com") Read More &gt;
+
+  -// SIGNATURE
+  mj-wrapper(mj-class="pt-lg")
+    mj-section(mj-class="bg-white px-lg")
+      mj-group
+        mj-column(width="25%" padding-right="20px" border-right="1px solid #d2d2d2")
+          mj-image(mj-class="center" src="https://s3.amazonaws.com/media2-brandetize/newsletter/temp/sig-logo.jpg" width="120px" fluid-on-mobile="false")
+        mj-column(width="75%")
+          mj-text(mj-class="bold text-md pb-0 px-lg")
+            p Client Name
+          mj-text(mj-class="text-sm px-lg pb-xs")
+            p Client Title
+
+          mj-text(mj-class="txt-sm pb-xs px-lg txt-grey")
+            p
+              a(href="tel:5555555555" style="color: #666666") (555) 555-5555
+              | &nbsp;&nbsp;|&nbsp;&nbsp;
+              a(href="mailto:person@company.com" style="color: #666666") person@company.com
+              | &nbsp;&nbsp;|&nbsp;&nbsp;
+              a(href="https://www.google.com" style="color: #666666") www.google.com
+          
+          mj-social( mj-class="left px-md py-0")
+            mj-social-element(name="facebook" href="https://www.facebook.com/")
+            mj-social-element(name="twitter" href="https://twitter.com/")
+          
+
+  include ../_inc/components/_foot
